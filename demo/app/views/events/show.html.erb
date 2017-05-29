@@ -1,0 +1,4 @@
+<%= @event.name %>
+<%= simple_format(@event.description) %>
+<!--   simple_format make <br> to /n on browser                      -->
+<p><%= link_to 'Back to index', :controller => 'events', :action => 'index' %></p>

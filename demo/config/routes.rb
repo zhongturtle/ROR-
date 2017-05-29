@@ -7,4 +7,7 @@ Rails.application.routes.draw do
 
   #default home page url setting
   root 'welcome#index'
+
+  match ':controller(/:action(/:id(.:format)))', :via => :all
+
 end
